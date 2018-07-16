@@ -18,11 +18,6 @@ describe('Trie', () => {
       expect(trie.count).to.equal(0);
     });
 
-  //it should exist
-  //it should have a root node thats an instance of Node
-  //it should have a count property defaulted to 0
-
-
   describe('insert', () => {
 
     it('should exist as a method', () => {
@@ -119,30 +114,14 @@ describe('Trie', () => {
       trie.insert('held')
       trie.delete('hello')
       trie.delete('help')
-
+      console.log(JSON.stringify(trie, null, 4));
       expect(trie.count).to.equal(2)
     })
   })
 
 })
 
-    //suggest
-    //should add a word to the array
-    //it should exist
-    //it should increment word count of the trie
-    //it should add a single word to the trie
-      //assert that thained nodes are added as children
-    //it shoudl NOT increment word count when inserting duplicate words
 
-    //populate
-    //it should exist
-    //it should add an array of words to tree
-    //it should increase trie word count to array amount
-
-    //delete
-    //it should exist 
-    //it should remove completed words from the last node
-    //it should remove any node that no longer lead to a completed word
 
 
 
